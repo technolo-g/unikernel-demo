@@ -28,6 +28,10 @@ gen_response() ->
 <html><head>
   <title>Hi there!</title>
 </head>
-<body>">>,
+<body>
+Denver Erlang / Elixir is the coolest meetup eva!<br />
+The pid generating this response is: ">>,
+  R= io_lib:format("~p",[self()]),
+  Body = list_to_binary(R),
   Footer = <<"</body></html>">>,
-  <<Header/binary, Footer/binary>>.
+  <<Header/binary, Body/binary, Footer/binary>>.
