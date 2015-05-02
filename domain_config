@@ -1,0 +1,4 @@
+name = "testn-autoproxy"
+kernel = "testn-autoproxy.img"
+extra = "-home /testn-autoproxy -pz /testn-autoproxy/apps/autoprox/ebin /testn-autoproxy/deps/ej/ebin /testn-autoproxy/deps/mochijson2/ebin"
+vif = []

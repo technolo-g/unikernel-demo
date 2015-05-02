@@ -1,0 +1,7 @@
+name = "testn-autoproxy"
+kernel = "testn-autoproxy.img"
+extra = "-ipaddr 10.100.199.230 -netmask 255.255.255.0 -gateway 10.100.199.1 -home /testn-autoproxy -pz /testn-autoproxy/apps/autoprox/ebin /testn-autoproxy/deps/ej/ebin /testn-autoproxy/deps/mochijson2/ebin -goofs /tmp"
+vif = [ '', ]
+memory = 1024
+disk = [ "tap:aio:/tmp/fs.img,xvda,w" ]
+

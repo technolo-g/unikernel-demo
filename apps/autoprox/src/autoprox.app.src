@@ -1,0 +1,18 @@
+{application, autoprox,
+  [
+    {description, "TestN Auto Proxy System"},
+    {vsn, "%AUTOPROX_VSN%"},
+    {modules, [    autoprox_sup,
+      autoprox_app,
+      autoprox_server,
+      autoprox_socket
+    ]},
+    {registered, [autoprox_sup]},
+    {applications, [
+      kernel,
+      stdlib,
+      sasl
+    ]},
+    {mod, { autoprox_app, []}},
+    {env, []}
+  ]}.

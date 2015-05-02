@@ -1,0 +1,10 @@
+out/
+*.dump
+*.beam
+deps/
+rel/autoproxnode
+.railing
+.idea/workspace.xml
+testn-autoproxy.img
+apps/autoprox/.rebar/erlcinfo
+
